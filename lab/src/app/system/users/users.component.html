@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Админ права</th>
+        <th *ngIf="isAdmin()"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.isadmin}}</td>
+        <td *ngIf="isUserCurrent(user)"><button (click)="onDelete(user)">Удалить</button></td>
+      </tr>
+    </tbody>
+</table>

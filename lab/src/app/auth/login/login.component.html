@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+      <select class="form-control" [(ngModel)]="selectedUser">
+        <option *ngFor="let user of users" [ngValue]="user">{{user.name}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-6">
+    <button class="btn btn-primary" [disabled]="selectedUser == null" (click)="onSelect()">Выбрать</button>
+  </div>
+  <div class="col-12">
+    <a [routerLink]="['/register']">Добавить пользователя</a>
+  </div>
+</div>

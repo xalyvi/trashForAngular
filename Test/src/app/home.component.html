@@ -1,0 +1,15 @@
+<div class="card">
+  <h3 class="card-header">Emplyoee Managment System</h3>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-6">
+        <select class="form-group" [(ngModel)]="selectedUser">
+          <option *ngFor="let user of users" [ngValue]="user">{{user.fullName}}</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-primary" [disabled]="selectedUser == null" (click)="onSelect()">Select</button>
+      </div>
+    </div>
+  </div>
+</div>

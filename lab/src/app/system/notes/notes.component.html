@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Текст</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let note of notes">
+      <td>{{note.id}}</td>
+      <td>{{note.text}}</td>
+      <td><button (click)="changeModeToEdit(note)">Редактировать</button></td>
+      <td><button (click)="onDelete(note)">Удалить</button></td>
+    </tr>
+  </tbody>
+</table>
+<label *ngIf="isAddMode()" style="margin-left: 50px;">Введите текст:
+  <input [(ngModel)]="newNoteText">
+  <button style="margin-left: 10px;" (click)=onAdd()>Добавить</button>
+</label>
+<label *ngIf="isEditMode()" style="margin-left: 50px;">Введите текст:
+  <input [(ngModel)]="editNoteText">
+  <button style="margin-left: 10px;" (click)=onEdit()>Изменить</button>
+</label>

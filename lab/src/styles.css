@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+.auth {
+	background-color: #a08cc1;
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	width: 100%;
+}
+
+.auth-container {
+	left: 50%;
+	min-height: 330px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	--webkit-transform: translateY(-50%) translateX(-50%);
+	width: 450px;
+}
+
+.auth-container .auth-header {
+	border-bottom: 1px solid #bbb9ac;
+	text-align: center;
+}
+
+.auth-container .auth-title {
+	font-family: Gilroy-Light;
+	color: #97a4b1;
+	padding: 10px;
+	line-height: 25px;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.auth-container .auth-content {
+	padding: 30px 50px;
+}
+
+@media (max-width: 767px) {
+	.auth-container {
+		left: 0;
+		margin: 0;
+		margin-bottom: 10px;
+		position: relative;
+		top: 0;
+		transform: inherit;
+		--webkit-transform: inherit;
+		width: 100%;
+	}
+
+	.auth-container .auth-content {
+		padding: 30px 25px;
+	}
+}

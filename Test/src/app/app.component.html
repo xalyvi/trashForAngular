@@ -1,0 +1,18 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+          <li class="nav-item" *ngIf="authService.isLoggedIn()">
+            <a routerLink="employees" routerLinkActive="active" class="nav-link">List</a>
+          </li>
+          <li class="nav-item" *ngIf="authService.isLoggedIn()">
+            <a routerLink="employees/create" routerLinkActive="active" class="nav-link">Create</a>
+          </li>
+        <li class="nav-item" *ngIf="authService.isLoggedIn()">
+          <button class="btn btn-primary" (click)="logout()">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

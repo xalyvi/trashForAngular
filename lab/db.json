@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "isadmin": true
+    },
+    {
+      "id": 2,
+      "name": "1",
+      "isadmin": false
+    },
+    {
+      "id": 3,
+      "name": "2",
+      "isadmin": false
+    },
+    {
+      "id": 4,
+      "name": "3",
+      "isadmin": false
+    },
+    {
+      "id": 5,
+      "name": "4",
+      "isadmin": false
+    },
+    {
+      "id": 6,
+      "name": "5",
+      "isadmin": false
+    },
+    {
+      "id": 7,
+      "name": "123123",
+      "isadmin": false
+    },
+    {
+      "id": 8,
+      "name": "456456",
+      "isadmin": false
+    }
+  ],
+  "notes": [
+    {
+      "id": 2,
+      "text": "наес",
+      "user_id": 2
+    },
+    {
+      "id": 4,
+      "text": "пауер ",
+      "user_id": 4
+    },
+    {
+      "id": 11,
+      "text": "тест",
+      "user_id": 2
+    }
+  ]
+}
